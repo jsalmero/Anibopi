@@ -133,6 +133,7 @@ public class Home extends AppCompatActivity {
                 JSONObject postDataParams = new JSONObject();
                // String a= Integer.toString(acierto);
                // String e= Integer.toString(equivocacion);
+	       //probando
                 postDataParams.put("acPlanta", acPlanta);
                 postDataParams.put("eqPlanta", eqPlanta);
                 postDataParams.put("acAnimal", acAnimal);
