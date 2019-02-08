@@ -8,11 +8,12 @@
     android:paddingLeft="8dp"
     android:paddingRight="8dp"
     android:paddingTop="15dp"
-    tools:context=".Inicio"
     android:background="@drawable/inicio"
     android:orientation="horizontal"
-    tools:ignore="MergeRootFrame"
-    >
+    tools:ignore="MerdeRootFrame"
+    tools:context="eduec.tea.anibopi.Inicio">
+    <!--*tools:context=".Inicio"-->
+
 
     <ImageView
         android:id="@+id/btnInicio"
