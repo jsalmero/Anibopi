@@ -228,6 +228,7 @@ public class ActividadRocas extends AppCompatActivity implements View.OnDragList
 
                     correctoroca1 = MediaPlayer.create(this, R.raw.correctorprocas);
                     correctoroca1.start();
+                    Home.acRoca++;
 
                     Handler h = new Handler();
                     h.postDelayed(r, 5000);
@@ -251,6 +252,8 @@ public class ActividadRocas extends AppCompatActivity implements View.OnDragList
 
                     incorrectoroca1 = MediaPlayer.create(this, R.raw.incorrec1rocas);
                     incorrectoroca1.start();
+                    Home.eqRoca++;
+
                 }
 
                 else if(dragData.equals("piezaincorrecta2")){
@@ -271,6 +274,7 @@ public class ActividadRocas extends AppCompatActivity implements View.OnDragList
 
                     incorrectoroca2 = MediaPlayer.create(this, R.raw.incorrec2rocas);
                     incorrectoroca2.start();
+                    Home.eqRoca++;
                 }
 
                 //  validar(dragData);

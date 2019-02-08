@@ -303,7 +303,7 @@ public class ActividadPlantas extends AppCompatActivity implements View.OnDragLi
 
                         correctoplanta1 = MediaPlayer.create(this, R.raw.correcto1selplanta);
                         correctoplanta1.start();
-                        Home.acierto++;
+                        Home.acPlanta++;
                     }
                     if(c.equals("2")){
 
@@ -315,7 +315,7 @@ public class ActividadPlantas extends AppCompatActivity implements View.OnDragLi
 
                         correctoplanta2 = MediaPlayer.create(this, R.raw.correcto2selplanta);
                         correctoplanta2.start();
-                        Home.acierto++;
+                        Home.acPlanta++;
                     }
                     if(c.equals("3")){
 
@@ -328,6 +328,7 @@ public class ActividadPlantas extends AppCompatActivity implements View.OnDragLi
 
                         correctoplanta3 = MediaPlayer.create(this, R.raw.correcto3selplanta);
                         correctoplanta3.start();
+                        Home.acPlanta++;
 
                     }
 
@@ -358,7 +359,7 @@ public class ActividadPlantas extends AppCompatActivity implements View.OnDragLi
 
                     incorrectoplanta1 = MediaPlayer.create(this, R.raw.incorrec1selplanta);
                     incorrectoplanta1.start();
-                    Home.equivocacion++;
+                    Home.eqPlanta++;
                 }
                 else if(dragData.equals("animal2")){
                     //Toast.makeText(this, "Incorrecto ", Toast.LENGTH_SHORT).show();
@@ -382,7 +383,7 @@ public class ActividadPlantas extends AppCompatActivity implements View.OnDragLi
 
                     incorrectoplanta2 = MediaPlayer.create(this, R.raw.incorrec2selplanta);
                     incorrectoplanta2.start();
-                    Home.equivocacion++;
+                    Home.eqPlanta++;
                 }
                 else if(dragData.equals("animal3")){
                     //Toast.makeText(this, "Incorrecto ", Toast.LENGTH_SHORT).show();
@@ -406,7 +407,7 @@ public class ActividadPlantas extends AppCompatActivity implements View.OnDragLi
 
                     incorrectoplanta3 = MediaPlayer.create(this, R.raw.incorrec3selplanta);
                     incorrectoplanta3.start();
-                    Home.equivocacion++;
+                    Home.eqPlanta++;
                 }
                 //  validar(dragData);
                 //   view.getBackground().clearColorFilter();

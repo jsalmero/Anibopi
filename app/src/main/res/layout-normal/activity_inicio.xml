@@ -12,7 +12,6 @@
     android:background="@drawable/inicio"
     android:orientation="horizontal"
     tools:ignore="MergeRootFrame"
-    tools:context="mx.uaa.oscarjess.sensordeproximidad.Inicio"
     >
 
     <ImageView

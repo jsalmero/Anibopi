@@ -306,6 +306,7 @@ public class ActividadAnimales extends AppCompatActivity implements View.OnDragL
 
                         correctoanimal1 = MediaPlayer.create(this, R.raw.correcto1selanimal);
                         correctoanimal1.start();
+                        Home.acAnimal++;
 
                     }
                     if(c.equals("2")){
@@ -318,6 +319,7 @@ public class ActividadAnimales extends AppCompatActivity implements View.OnDragL
 
                         correctoanimal2 = MediaPlayer.create(this, R.raw.correcto2selanimal);
                         correctoanimal2.start();
+                        Home.acAnimal++;
 
                     }
                     if(c.equals("3")){
@@ -331,6 +333,7 @@ public class ActividadAnimales extends AppCompatActivity implements View.OnDragL
 
                         correctoanimal3 = MediaPlayer.create(this, R.raw.correcto3selanimal);
                         correctoanimal3.start();
+                        Home.acAnimal++;
                     }
 
                     Handler h = new Handler();
@@ -360,6 +363,7 @@ public class ActividadAnimales extends AppCompatActivity implements View.OnDragL
 
                     incorrectoanimal1 = MediaPlayer.create(this, R.raw.incorrec1selanimal);
                     incorrectoanimal1.start();
+                    Home.eqAnimal++;
 
                 }
 
@@ -385,6 +389,7 @@ public class ActividadAnimales extends AppCompatActivity implements View.OnDragL
 
                     incorrectoanimal2 = MediaPlayer.create(this, R.raw.incorrec2selanimal);
                     incorrectoanimal2.start();
+                    Home.eqAnimal++;
 
                 }
                 else if(dragData.equals("planta3")){
@@ -409,6 +414,7 @@ public class ActividadAnimales extends AppCompatActivity implements View.OnDragL
 
                     incorrectoanimal3 = MediaPlayer.create(this, R.raw.incorrec3selanimal);
                     incorrectoanimal3.start();
+                    Home.eqAnimal++;
 
                 }
                 //  validar(dragData);

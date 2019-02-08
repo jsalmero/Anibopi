@@ -239,6 +239,7 @@ public class ActividadMontanas extends AppCompatActivity implements View.OnDragL
 
                     correctomontana1 = MediaPlayer.create(this, R.raw.correctorpmontanas);
                     correctomontana1.start();
+                    Home.acMontana++;
 
                     Handler h = new Handler();
                     h.postDelayed(r, 4000);
@@ -262,6 +263,7 @@ public class ActividadMontanas extends AppCompatActivity implements View.OnDragL
 
                     incorrectomontana1 = MediaPlayer.create(this, R.raw.incorrec1montanas);
                     incorrectomontana1.start();
+                    Home.eqMontana++;
                 }
 
                 else if(dragData.equals("piezaincorrecta2")){
@@ -282,6 +284,7 @@ public class ActividadMontanas extends AppCompatActivity implements View.OnDragL
 
                     incorrectomontana2 = MediaPlayer.create(this, R.raw.incorrec2montanas);
                     incorrectomontana2.start();
+                    Home.eqMontana++;
                 }
 
 

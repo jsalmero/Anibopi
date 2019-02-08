@@ -28,7 +28,7 @@ public class Home extends AppCompatActivity {
 
     private ImageView btnatras, btnevaluacion, btnplanta, btnanimal, btnroca, btnmontana;
     public Intent intent;
-    public static int acierto, equivocacion;
+    public static int acPlanta, acAnimal, acRoca, acMontana, acEva, eqPlanta, eqAnimal, eqRoca, eqMontana, eqEva;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -133,8 +133,16 @@ public class Home extends AppCompatActivity {
                 JSONObject postDataParams = new JSONObject();
                // String a= Integer.toString(acierto);
                // String e= Integer.toString(equivocacion);
-                postDataParams.put("acierto", acierto);
-                postDataParams.put("equivocacion", equivocacion);
+                postDataParams.put("acPlanta", acPlanta);
+                postDataParams.put("eqPlanta", eqPlanta);
+                postDataParams.put("acAnimal", acAnimal);
+                postDataParams.put("eqAnimal", eqAnimal);
+                postDataParams.put("acRoca", acRoca);
+                postDataParams.put("eqRoca", eqRoca);
+                postDataParams.put("acMontana", acMontana);
+                postDataParams.put("eqMontana", eqMontana);
+                postDataParams.put("acEva", acEva);
+                postDataParams.put("eqEva", eqEva);
                 Log.e("params",postDataParams.toString());
 
                 HttpURLConnection conn = (HttpURLConnection) url.openConnection();
@@ -169,8 +177,18 @@ public class Home extends AppCompatActivity {
                         sb.append(line);
                         break;
                     }
-
+                    acPlanta=0;
+                    eqPlanta=0;
+                    acAnimal=0;
+                    eqAnimal=0;
+                    acRoca=0;
+                    eqRoca=0;
+                    acMontana=0;
+                    eqMontana=0;
+                    acEva=0;
+                    eqEva=0;
                     in.close();
+
                     return sb.toString();
 
                 }
@@ -186,8 +204,10 @@ public class Home extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String result) {
-            Toast.makeText(getApplicationContext(), "Guardado "+equivocacion,
+            Toast.makeText(getApplicationContext(), "Guardando ",
                     Toast.LENGTH_LONG).show();
+
+
         }
     }
 

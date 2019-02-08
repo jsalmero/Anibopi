@@ -363,6 +363,8 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                         correctoseresvivos = MediaPlayer.create(this, R.raw.correcto1selsv);
                         correctoseresvivos.start();
+                        Home.acEva++;
+
                         Handler h = new Handler();
                         h.postDelayed(r, 5000);
                     }else{
@@ -398,6 +400,7 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                         correctoseresvivos = MediaPlayer.create(this, R.raw.correcto1selsv);
                         correctoseresvivos.start();
+                        Home.acEva++;
 
                         Handler h = new Handler();
                         h.postDelayed(r, 5000);
@@ -423,6 +426,7 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                     incorrectoservivo = MediaPlayer.create(this, R.raw.incorrec1selsv);
                     incorrectoservivo.start();
+                    Home.eqEva++;
                 }
 
                 if(dragData.equals("piezacorrecta1") && numaleat.equals("2")){
@@ -453,6 +457,7 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                         correctoseresvivos = MediaPlayer.create(this, R.raw.correcto1selsv);
                         correctoseresvivos.start();
+                        Home.acEva++;
 
                         Handler h = new Handler();
                         h.postDelayed(r, 5000);
@@ -490,6 +495,7 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                         correctoseresvivos = MediaPlayer.create(this, R.raw.correcto1selsv);
                         correctoseresvivos.start();
+                        Home.acEva++;
 
                         Handler h = new Handler();
                         h.postDelayed(r, 5000);
@@ -515,6 +521,7 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                     incorrectoservivo = MediaPlayer.create(this, R.raw.incorrec1selsv);
                     incorrectoservivo.start();
+                    Home.eqEva++;
                 }
 
 
@@ -546,6 +553,7 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                         correctoseresvivos = MediaPlayer.create(this, R.raw.correcto1selsv);
                         correctoseresvivos.start();
+                        Home.acEva++;
 
                         Handler h = new Handler();
                         h.postDelayed(r, 5000);
@@ -584,6 +592,7 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                         correctoseresvivos = MediaPlayer.create(this, R.raw.correcto1selsv);
                         correctoseresvivos.start();
+                        Home.acEva++;
 
                         Handler h = new Handler();
                         h.postDelayed(r, 5000);
@@ -608,6 +617,7 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                     incorrectoservivo = MediaPlayer.create(this, R.raw.incorrec1selsv);
                     incorrectoservivo.start();
+                    Home.eqEva++;
                 }
 
                 if(dragData.equals("piezacorrectasnv1")){
@@ -638,6 +648,7 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                         correctoseresnovivos = MediaPlayer.create(this, R.raw.correcto1selsnv);
                         correctoseresnovivos.start();
+                        Home.acEva++;
 
                         Handler h = new Handler();
                         h.postDelayed(r, 5000);
@@ -674,6 +685,7 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                         correctoseresnovivos = MediaPlayer.create(this, R.raw.correcto1selsnv);
                         correctoseresnovivos.start();
+                        Home.acEva++;
 
                         Handler h = new Handler();
                         h.postDelayed(r, 5000);
@@ -699,6 +711,7 @@ public class ActividadEvaluacion extends AppCompatActivity implements View.OnDra
 
                     incorrectosernovivo = MediaPlayer.create(this, R.raw.incorrec1selsnv);
                     incorrectosernovivo.start();
+                    Home.eqEva++;
                 }
                 //  validar(dragData);
                 //   view.getBackground().clearColorFilter();
