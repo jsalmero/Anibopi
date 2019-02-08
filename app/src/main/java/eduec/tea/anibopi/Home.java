@@ -134,6 +134,7 @@ public class Home extends AppCompatActivity {
                // String a= Integer.toString(acierto);
                // String e= Integer.toString(equivocacion);
 	       //probando
+               //probando 2
                 postDataParams.put("acPlanta", acPlanta);
                 postDataParams.put("eqPlanta", eqPlanta);
                 postDataParams.put("acAnimal", acAnimal);
